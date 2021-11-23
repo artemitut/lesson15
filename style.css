@@ -14,6 +14,7 @@ body{
 }
 
 .linka3, .linka2, .linka1 {
+    opacity: 1;
     text-decoration: none;
     color: white;
     text-decoration: none;
@@ -26,6 +27,7 @@ body{
     color: white;
     padding: 20px 0px;
     margin: 0px 0px;
+    opacity: 1;
 }
 .sidebar{
     padding: 0.5em 1em;
@@ -82,7 +84,13 @@ and (max-width:1024px){
 }
 @media screen 
 and (max-width:480px){
+    html{
+        width: 100%;
+    }
     body{
+        text-align: center;
+    }
+    .conteiner{
         text-align: center;
     }
     .header {  
@@ -100,7 +108,7 @@ and (max-width:480px){
     .titleh2, .linka3, .linka2, .linka1 {
         display: grid;
         position: relative;
-        width: 100%;
+        width: 96%;
         padding: 3px;
         left: 0%;
         top: 1%;
@@ -109,8 +117,10 @@ and (max-width:480px){
         border-top: 2px solid rgb(70, 70, 70)
     }
     .sidebar{
-        width: 96%;
+        width: 97%;
         height: auto;
+        box-sizing: border-box;
+        text-align: center;
     }
     .h2tel{
         width: 100%;
